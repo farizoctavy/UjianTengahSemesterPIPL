@@ -6,9 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<script>
-
-</script>
 <body class="bg-[#f5f7fb] text-gray-700 font-sans">
 
   <!-- Navbar -->
@@ -17,15 +14,9 @@
 
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-      <h1 class="text-lg font-semibold">SecureCheckout</h1>
+      <h1 class="text-lg font-semibold">UjianTengahSemesterPIPL</h1>
 
       <nav class="hidden md:flex gap-10 text-sm text-gray-500">
-
-        <a href="#" class="hover:text-blue-600">Shop</a>
-
-        <a href="#" class="hover:text-blue-600">Categories</a>
-
-        <a href="#" class="hover:text-blue-600">Offers</a>
 
       </nav>
 
@@ -126,13 +117,9 @@
               <label class="text-sm mb-2 block">Total Belanja (Rp)</label>
 
               <input
-
                 id="totalBelanja"
-
                 type="number"
-
-                value="0"
-
+                placeholder="Rp 200.000"
                 class="w-full border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
 
               />
@@ -215,73 +202,9 @@
 
         </div>
 
-        <!-- Shipping -->
-
-        <div class="mt-8">
-
-          <h2 class="font-semibold mb-4">Metode Pengiriman</h2>
-
-          <div class="grid md:grid-cols-2 gap-4">
-
-            <button
-
-              id="standardBtn"
-
-              onclick="selectShipping('standard')"
-
-              class="shipping-btn border-2 border-blue-600 bg-white rounded-xl p-5 text-left"
-
-            >
-
-              <div class="flex justify-between items-center">
-
-                <div>
-
-                  <h3 class="font-medium">Standard Delivery</h3>
-
-                  <p class="text-sm text-gray-500">2-3 Hari Kerja</p>
-
-                </div>
-
-                <span class="font-semibold">Gratis</span>
-
-              </div>
-
-            </button>
-
-            <button
-
-              id="expressBtn"
-
-              onclick="selectShipping('express')"
-
-              class="shipping-btn border rounded-xl p-5 text-left bg-white"
-
-            >
-
-              <div class="flex justify-between items-center">
-
-                <div>
-
-                  <h3 class="font-medium">Express Delivery</h3>
-
-                  <p class="text-sm text-gray-500">1 Hari Kerja</p>
-
-                </div>
-
-                <span class="font-semibold">Rp 25.000</span>
-
-              </div>
-
-            </button>
-
-          </div>
-
-        </div>
-
       </div>
 
-      <!-- Summary -->
+      <!-- Right Content - Summary -->
 
       <div>
 
@@ -335,109 +258,17 @@
 
           </div>
 
-          <div class="bg-white border rounded-xl p-4 mt-6 text-sm text-gray-600">
-
-            🔒 Pembayaran Terenkripsi & Aman
-
-          </div>
-
-          <button
-
-            class="w-full bg-blue-600 hover:bg-blue-700 transition text-white py-3 rounded-xl mt-5 font-medium"
-
-          >
+          <button class="w-full bg-blue-600 hover:bg-blue-700 transition text-white py-3 rounded-xl mt-5 font-medium">
 
             Konfirmasi Pesanan →
 
           </button>
-
-          <p class="text-xs text-center text-gray-500 mt-4 leading-relaxed">
-
-            Dengan menekan tombol di atas, Anda menyetujui
-
-            <span class="text-blue-600">Syarat & Ketentuan</span> kami.
-
-          </p>
 
         </div>
 
       </div>
 
     </div>
-
-    <!-- Features -->
-
-    <div class="grid md:grid-cols-3 gap-5 mt-14">
-
-      <div class="bg-white border rounded-xl p-5">
-
-        <h3 class="font-semibold mb-1">100% Secure Payment</h3>
-
-        <p class="text-sm text-gray-500">
-
-          Transaksi dilindungi enkripsi SSL standar industri.
-
-        </p>
-
-      </div>
-
-      <div class="bg-white border rounded-xl p-5">
-
-        <h3 class="font-semibold mb-1">Lacak Pesanan</h3>
-
-        <p class="text-sm text-gray-500">
-
-          Dapatkan notifikasi real-time untuk status pengiriman.
-
-        </p>
-
-      </div>
-
-      <div class="bg-white border rounded-xl p-5">
-
-        <h3 class="font-semibold mb-1">Bantuan 24/7</h3>
-
-        <p class="text-sm text-gray-500">
-
-          Tim bantuan kami siap melayani kapan pun dibutuhkan.
-
-        </p>
-
-      </div>
-
-    </div>
-
-  </main>
-
-  <!-- Footer -->
-
-  <footer class="bg-[#eef3ff] border-t mt-14">
-
-    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-gray-500">
-
-      <div>
-
-        <h3 class="font-semibold text-gray-700">SecureCheckout</h3>
-
-        <p>© 2024 SecureCheckout Inc. All rights reserved.</p>
-
-      </div>
-
-      <div class="flex gap-5">
-
-        <a href="#">Privacy Policy</a>
-
-        <a href="#">Terms of Service</a>
-
-        <a href="#">Help Center</a>
-
-        <a href="#">Contact Us</a>
-
-      </div>
-
-    </div>
-
-  </footer>
 
   <script>
 
@@ -495,34 +326,6 @@
 
     }
 
-    function selectShipping(type) {
-
-      const standardBtn = document.getElementById("standardBtn");
-
-      const expressBtn = document.getElementById("expressBtn");
-
-      standardBtn.classList.remove("border-blue-600", "border-2");
-
-      expressBtn.classList.remove("border-blue-600", "border-2");
-
-      if (type === "standard") {
-
-        shippingCost = 0;
-
-        standardBtn.classList.add("border-blue-600", "border-2");
-
-      } else {
-
-        shippingCost = 25000;
-
-        expressBtn.classList.add("border-blue-600", "border-2");
-
-      }
-
-      updateSummary();
-
-    }
-
     totalBelanja.addEventListener("input", updateSummary);
 
     member.addEventListener("change", updateSummary);
@@ -534,4 +337,5 @@
   </script>
 
 </body>
+
 </html>
